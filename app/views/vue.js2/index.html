@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lag="ja">
+<head>
+  <meta charset="ut-8">
+  <title>Vue.js2</title>
+</head>
+<body>
+
+  <div id="app">
+    <p>Total Likes: {{ total }}</p>
+    <like-componet message="Like" @increment="incrementTotal"></like-componet>
+    <like-componet message="Awesome" @increment="incrementTotal"></like-componet>
+    <like-componet message="Great" @increment="incrementTotal"></like-componet>
+    <like-componet @increment="incrementTotal" ></like-componet>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="main.js"></script>
+</body>
+</html>
